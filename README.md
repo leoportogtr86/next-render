@@ -7,3 +7,17 @@
 - Troca de `dados(json)` entre `frontend` e `backend`
 
 ![Spa](/src/assets/img/spa.png)
+
+___
+
+## SSR (server side rendering)
+
+- Otimização de SEO
+- Renderização do lado do servidor (conteúdo gerado no servidor)
+- O HTML com conteúdo completo é disponibilizado na requisição a cada requisição (dinamicamente)
+
+![Spa](/src/assets/img/ssr1.png)
+![Spa](/src/assets/img/ssr2.png)
+
+___
+

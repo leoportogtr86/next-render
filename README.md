@@ -21,3 +21,13 @@ ___
 
 ___
 
+
+## SSG (static site generation)
+
+- Arquivos presentes fisicamente no servidor
+- Realiza os processamentos que forem necessários e salva os arquivos em disco
+
+![Spa](/src/assets/img/ssg.png)
+
+___
+

@@ -19,6 +19,16 @@ ___
 ![Spa](/src/assets/img/ssr1.png)
 ![Spa](/src/assets/img/ssr2.png)
 
+```js
+export function getServerSideProps() {
+  return {
+    props: {
+      numero: Math.random(),
+    },
+  };
+}
+```
+
 ___
 
 
@@ -28,6 +38,24 @@ ___
 - Realiza os processamentos que forem necessários e salva os arquivos em disco
 
 ![Spa](/src/assets/img/ssg.png)
+
+
+```js
+export async function getStaticProps() {
+  const resp = await fetch("http://localhost:3000/api/produtos");
+  const produtos = await resp.json();
+  console.log("Estou rodando do lado do server...");
+  exec("ls", (err, stdout, stderr) => {
+    console.log(stdout);
+  });
+
+  return {
+    props: {
+      produtos,
+    },
+  };
+}
+```
 
 ___
 
